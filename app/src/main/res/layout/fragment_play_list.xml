@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:id="@+id/frame_layout_playlist"
+    tools:context="PlayList.PlayListFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_back_to_personal"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_back_arrow"
+            android:text="       Play list"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:weightSum="9"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:drawableLeft="@drawable/ic_btn_search"
+            android:textColorHint="#0C0C00"
+            android:id="@+id/edt_1"
+            android:layout_weight="8"
+            android:hint="   Bộ lọc"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:background="@drawable/edt_custom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn"
+            android:background="@drawable/ic_arrange"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_create"
+
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_creat_playlist_custom_shape"
+            android:text="Tạo Playlist"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_weight="6">
+
+        <ListView
+            android:id="@+id/lv_Album"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

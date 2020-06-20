@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music Player</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="time_start">00:00</string>
+    <string name="time_stop">04:54</string>
+    <string name="hello_blank_fragment">THƯ VIỆN NHẠC</string>
+
+
+</resources>

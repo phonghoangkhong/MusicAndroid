@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_sub_song_list"
+    android:background="#f2f2f2"
+    tools:context=".AuthorList.SubSongListFragment">
+
+    <RelativeLayout
+        android:layout_gravity="left"
+        android:background="#f2f2f2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:text="Danh sách nhạc"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/tv_title"
+            android:background="@drawable/layout_bg"
+            android:layout_marginTop="12dp"
+            android:id="@+id/rv_song_by_author"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

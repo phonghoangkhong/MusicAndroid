@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="PlayList.PlayListFragment"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@drawable/border_dialog">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_play_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:text="Tạo Playlist"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#5E1174"
+        android:textColorHint="#25000000"
+        android:textColor="#000"
+        android:hint="Nhập tên của play list" />
+    <Button
+        android:id="@+id/btn_agree"
+        android:textSize="20dp"
+        android:textColor="#5E1174"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:text="Đồng ý" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:textColor="#5E1174"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp"
+        android:text="Bỏ qua" />
+
+</RelativeLayout>
